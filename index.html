@@ -845,7 +845,7 @@
       <div class="container">
         <div class="st-copyright-wrap text-center">
           <div class="st-copyright-text">
-            © 2020. Hafiz Sando. All right reserved.
+            © <span id="copyright-year"></span>. Hafiz Sando. All right reserved.
           </div>
         </div>
       </div>
@@ -860,5 +860,10 @@
     <script src="assets/js/ripples.min.js"></script>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      const copyright_year = document.getElementById("copyright-year");
+      const year_value = new Date().getFullYear();
+      copyright_year.innerHTML = year_value
+    </script>
   </body>
 </html>
